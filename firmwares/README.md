@@ -1,1 +1,1 @@
-# Micropython firmwares
+# Micropython firmwares that support esp32-cam
