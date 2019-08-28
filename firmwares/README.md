@@ -3,7 +3,7 @@ We have two micropython firmware cloned and compiled:
 * 1-10 (https://github.com/tsaarni/micropython-with-esp32-cam) MicroPython v1.10-128-g584bc5b2a
 * 1-11 (https://github.com/Lennyz1988/micropython) MicroPython v1.11-209-g6b54be556-dirty
 
-Both support camare module. To flash the firmware.bin follow the steps below:
+Both support camera module. To flash the firmware.bin follow the steps below:
 1. connect GPIO0 to GND
 2. press reset or pull out/ push in USB serial adapter
 3. run erase.sh, to erase flash memory
