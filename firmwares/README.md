@@ -32,3 +32,5 @@ b'\xff\xd8\xff\xe0\x00\x10JF'
 True
 ```
 You now have camera enabled micropython. Nice!
+
+Read [my blog](https://kopimojo.blogspot.com/).
