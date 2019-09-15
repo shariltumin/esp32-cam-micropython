@@ -139,5 +139,5 @@ camera_xclk
 
 Nice, we did it, celebrate have a cup of coffe with cream and read [my blog](https://kopimojo.blogspot.com/).
 
-**LATEST** The latest compiled firmware is under [1-11-20190915](https://github.com/shariltumin/esp32-cam-micropython/firmwares/1-11-20190915)
+**LATEST** The latest compiled firmware is under [1-11-20190915](https://github.com/shariltumin/esp32-cam-micropython/tree/master/firmwares/1-11-20190915)
 
