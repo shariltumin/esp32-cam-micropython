@@ -1,4 +1,7 @@
 # Micropython firmwares that support esp32-cam.
+
+The latest firmware is under 1-11-20190915 MicroPython v1.11-312-g22099ab88
+
 We have two micropython firmware cloned and compiled:
 * 1-10 (https://github.com/tsaarni/micropython-with-esp32-cam) MicroPython v1.10-128-g584bc5b2a
 * 1-11 (https://github.com/Lennyz1988/micropython) MicroPython v1.11-209-g6b54be556-dirty
