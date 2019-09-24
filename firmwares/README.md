@@ -3,11 +3,11 @@
 **LATEST** - The latest firmware is under 1-11-20190921 MicroPython v1.11-328-gd96391aca.
 See [esp32-cam](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam) on how you can compile and build your own firmware. The firmware was compiles without web-repl and upip modules.
 
-We have two micropython firmware cloned and compiled:
+The firmware was compiled based on the two work below. These two micropython ports are:
 * 1-10 (https://github.com/tsaarni/micropython-with-esp32-cam) MicroPython v1.10-128-g584bc5b2a
 * 1-11 (https://github.com/Lennyz1988/micropython) MicroPython v1.11-209-g6b54be556-dirty
 
-Both support camera module. To flash the firmware.bin follow the steps below:
+To flash the firmware.bin follow the steps below:
 1. connect GPIO0 to GND
 2. press reset or pull out/ push in USB serial adapter
 3. run erase.sh, to erase flash memory
