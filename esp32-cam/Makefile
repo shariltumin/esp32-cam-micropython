@@ -141,11 +141,11 @@ INC_ESPCOMP += -I$(ESPCOMP)/app_update/include
 INC_ESPCOMP += -I$(ESPCOMP)/pthread/include
 INC_ESPCOMP += -I$(ESPCOMP)/smartconfig_ack/include
 INC_ESPCOMP += -I$(ESPCOMP)/sdmmc/include
-INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera-for-micropython/driver/include
-INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera-for-micropython/driver/private_include
-INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera-for-micropython/conversions/include
-INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera-for-micropython/conversions/private_include
-INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera-for-micropython/sensors/private_include
+INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera/driver/include
+INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera/driver/private_include
+INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera/conversions/include
+INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera/conversions/private_include
+INC_ESPCOMP += -I$(ESPCOMP)/esp32-camera/sensors/private_include
 
 # these flags are common to C and C++ compilation
 CFLAGS_COMMON = -Os -ffunction-sections -fdata-sections -fstrict-volatile-bitfields \
@@ -398,9 +398,9 @@ ESPIDF_WPA_SUPPLICANT_O = $(patsubst %.c,%.o,\
 	)
 
 ESP32_CAM_O = $(patsubst %.c,%.o,\
-	$(wildcard $(ESPCOMP)/esp32-camera-for-micropython/driver/*.c) \
-	$(wildcard $(ESPCOMP)/esp32-camera-for-micropython/sensors/*.c) \
-	$(wildcard $(ESPCOMP)/esp32-camera-for-micropython/conversions/*.c) \
+	$(wildcard $(ESPCOMP)/esp32-camera/driver/*.c) \
+	$(wildcard $(ESPCOMP)/esp32-camera/sensors/*.c) \
+	$(wildcard $(ESPCOMP)/esp32-camera/conversions/*.c) \
 	)
 
 ESPIDF_SDMMC_O = $(patsubst %.c,%.o,$(wildcard $(ESPCOMP)/sdmmc/*.c))
