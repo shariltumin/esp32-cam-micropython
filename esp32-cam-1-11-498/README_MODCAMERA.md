@@ -18,4 +18,4 @@ I have improved the modcamera.c code to incorporate seven new additional functio
 
 They are all callable after camera.init(), which means, we can change those properties at the run time.
 
-Raed this post in my blog.
+Read this [post](https://kopimojo.blogspot.com/2019/10/micropython-v1.html) in my [blog](https://kopimojo.blogspot.com).
