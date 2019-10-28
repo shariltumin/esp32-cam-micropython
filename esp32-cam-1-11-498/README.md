@@ -49,10 +49,15 @@ $ cd esp32-cam
 $ export MPTD=/home/sharil/Downloads/esp32-cam-1-11-498
 
 $ cp $MPTD/main.c .
+
 $ cp $MPTD/Makefile .
+
 $ cp $MPTD/modcamera.c .
+
 $ cp $MPTD/mpconfigport.h .
+
 $ cp $MPTD/boards/manifest.py ./boards/manifest.py
+
 $ cp $MPTD/boards/sdkconfig.base ./boards/sdkconfig.base
 
 $ make clean
