@@ -14,6 +14,9 @@ To flash the firmware.bin follow the steps below:
 5. run flash.sh to upload the firmware.bin to flash memory
 6. disconnect GPIO0 from GND
 
+You find erase.sh and flash.sh under [tools](https://github.com/shariltumin/esp32-cam-micropython/tree/master/firmwares/tools).
+You may need to install esptool.py
+
 To test (I run this on linux, you may need to change the port)
 
 ```
