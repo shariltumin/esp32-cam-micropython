@@ -4,10 +4,6 @@
 
 See [esp32-cam-1-11-498](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam-1-11-498) on how you can compile and build your own firmware. The firmware was compiled without help, webrepl and upip modules.
 
-The firmware was compiled based on the two work below. These two micropython ports are:
-* 1-10 (https://github.com/tsaarni/micropython-with-esp32-cam) MicroPython v1.10-128-g584bc5b2a
-* 1-11 (https://github.com/Lennyz1988/micropython) MicroPython v1.11-209-g6b54be556-dirty
-
 To flash the firmware.bin follow the steps below:
 1. connect GPIO0 to GND
 2. press reset or pull out/ push in USB serial adapter
