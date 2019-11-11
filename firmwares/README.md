@@ -2,7 +2,7 @@
 
 **LATEST** - The latest firmware is under 1-11-20191107 MicroPython v1.11-571-g7e374d231.
 
-see[esp32-cam-1-11-571](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam-1-11-571) for files needed to compiled the firmware.
+See [esp32-cam-1-11-571](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam-1-11-571) for files needed to compiled the firmware.
 
 See [esp32-cam-1-11-498](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam-1-11-498) on how you can compile and build your own firmware. The firmware was compiled without help, webrepl and upip modules.
 
