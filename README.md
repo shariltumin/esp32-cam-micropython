@@ -6,4 +6,4 @@ If you're looking for a compiled firmware that support camera for your esp32-cam
 
 You can find some webcam server test scripts in [webcam](https://github.com/shariltumin/esp32-cam-micropython/tree/master/webcam). **Latest** is [mth_webcam.py](https://github.com/shariltumin/esp32-cam-micropython/blob/master/webcam/mth_webcam.py) a multi-threaded three ports web server. Serving webcam at port 80.
 
-I record my works at [my blog](https://kopimojo.blogspot.com/) feel free to drop by.
+I record my works at [kopimojo.blogspot.com](https://kopimojo.blogspot.com/) feel free to drop by.
