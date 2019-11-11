@@ -4,7 +4,7 @@
 ```python
 import mth_webcam.py
 ```
-will start the webcam server at hard reset (power cycle)
+will start the webcam server at hard reset (power cycle). Read [this](https://kopimojo.blogspot.com/2019/11/multi-threading-i-previously-used.html) blog concerning my multi-threaded webcam server.
 
 Simple experimental webcam servers in AP and STA mode built using uasyncio.
 
