@@ -203,37 +203,37 @@ async def port3(cs, rq):
          cs.send(b'%s' % hdr['OK'])
       elif rqp[2] == 'pix':
          w = int(rqp[3])
-         if w>0 or w<13:
+         if w>0 and w<13:
             camera.framesize(w)
          cs.send(b'%s' % hdr['OK'])
       elif rqp[2] == 'qua':
          w = int(rqp[3])
-         if w>9 or w<64:
+         if w>9 and w<64:
             camera.quality(w)
          cs.send(b'%s' % hdr['OK'])
       elif rqp[2] == 'con':
          w = int(rqp[3])
-         if w>-3 or w<3:
+         if w>-3 and w<3:
             camera.contrast(w)
          cs.send(b'%s' % hdr['OK'])
       elif rqp[2] == 'sat':
          w = int(rqp[3])
-         if w>-3 or w<3:
+         if w>-3 and w<3:
             camera.saturation(w)
          cs.send(b'%s' % hdr['OK'])
       elif rqp[2] == 'bri':
          w = int(rqp[3])
-         if w>-3 or w<3:
+         if w>-3 and w<3:
             camera.brightness(w)
          cs.send(b'%s' % hdr['OK'])
       elif rqp[2] == 'spe':
          w = int(rqp[3])
-         if w>=0 or w<7:
+         if w>=0 and w<7:
             camera.speffect(w)
          cs.send(b'%s' % hdr['OK'])
       elif rqp[2] == 'wbl':
          w = int(rqp[3])
-         if w>=0 or w<5:
+         if w>=0 and w<5:
             camera.whitebalance(w)
          cs.send(b'%s' % hdr['OK'])
       else:
