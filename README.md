@@ -1,6 +1,6 @@
 # esp32-cam-micropython
 
-**Latest** is [esp32-cam-1-11-571](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam-1-11-571)
+**Latest** custommade.zip, please read [this blog](https://kopimojo.blogspot.com/2019/12/custom-made-sometimes-it-is-nice-to-be.html) and find out what it is good for.
 
 If you're looking for a compiled firmware that support camera for your esp32-cam board then please click [firmwares](https://github.com/shariltumin/esp32-cam-micropython/tree/master/firmwares).
 
