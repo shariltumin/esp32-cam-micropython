@@ -1,10 +1,8 @@
 # Micropython firmwares that support esp32-cam.
 
-**LATEST** - The latest firmware is under 1-11-20191107 MicroPython v1.11-571-g7e374d231.
+**LATEST** - The latest firmware is under 20191209 - MicroPython v1.11-631-gb76f0a73b-kaki5
 
-See [esp32-cam-1-11-571](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam-1-11-571) for files needed to compiled the firmware.
-
-See [esp32-cam-1-11-498](https://github.com/shariltumin/esp32-cam-micropython/tree/master/esp32-cam-1-11-498) on how you can compile and build your own firmware. The firmware was compiled without help, webrepl and upip modules.
+You can download custommade.zip and read [this blog](https://kopimojo.blogspot.com/2019/12/custom-made-sometimes-it-is-nice-to-be.html) to build custom made firmware.
 
 To flash the firmware.bin follow the steps below:
 1. connect GPIO0 to GND
