@@ -2,7 +2,7 @@
 
 **LATEST** - The latest firmware is under 20191209 - MicroPython v1.11-631-gb76f0a73b-kaki5
 
-You can download custommade.zip and read [this blog](https://kopimojo.blogspot.com/2019/12/custom-made-sometimes-it-is-nice-to-be.html) to build custom made firmware.
+You can download [custommade.zip](https://github.com/shariltumin/esp32-cam-micropython/blob/master/custommade.zip) and read [this blog](https://kopimojo.blogspot.com/2019/12/custom-made-sometimes-it-is-nice-to-be.html) to build custom made firmware.
 
 To flash the firmware.bin follow the steps below:
 1. connect GPIO0 to GND
