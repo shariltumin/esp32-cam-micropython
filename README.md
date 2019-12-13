@@ -2,7 +2,7 @@
 
 **Latest** custommade.zip, please read [this blog](https://kopimojo.blogspot.com/2019/12/custom-made-sometimes-it-is-nice-to-be.html) and find out what it is good for.
 
-The custommade.zip now contains files that will also include LittleFS in the firmware for esp32-cam, esp32 and esp8266. Please, what Damien George explaining what LittleFS is good for, at a [Melbourne micropython meeting](https://www.youtube.com/watch?v=wkgU4fGP3eY). 
+The custommade.zip now contains files that will also include LittleFS in the firmware for esp32-cam, esp32 and esp8266. Please watch Damien George explaining what LittleFS is good for, at a [Melbourne micropython meeting](https://www.youtube.com/watch?v=wkgU4fGP3eY). 
 
 
 The files in the directories under are obsolete:
