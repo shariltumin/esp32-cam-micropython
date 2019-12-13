@@ -1,6 +1,6 @@
 # Micropython firmwares that support esp32-cam.
 
-**LATEST** - The latest firmware is under 20191209 - MicroPython v1.11-631-gb76f0a73b-kaki5
+**LATEST** - The latest firmware is under 20191213 - MicroPython v1.11-665-gfb0141559-kaki5
 
 You can download [custommade.zip](https://github.com/shariltumin/esp32-cam-micropython/blob/master/custommade.zip) and read [this blog](https://kopimojo.blogspot.com/2019/12/custom-made-sometimes-it-is-nice-to-be.html) to build custom made firmware.
 
