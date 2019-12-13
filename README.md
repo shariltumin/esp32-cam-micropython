@@ -4,6 +4,16 @@
 
 The custommade.zip now contains files that will also include LittleFS in the firmware for esp32-cam, esp32 and esp8266. Please watch Damien George explaining what LittleFS is good for, at a [Melbourne micropython meeting](https://www.youtube.com/watch?v=wkgU4fGP3eY). 
 
+You can use LittleFS instead of FatFS(default) by doing these in REPL:
+
+```
+>>> import os
+>>> os.VfsLfs2.mkfs(bdev)
+
+```
+
+You will save RAM if you use LittleFS. The FS setting will survive reboot and power cycle.
+
 
 The files in the directories under are obsolete:
 
