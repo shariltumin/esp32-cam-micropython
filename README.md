@@ -1,3 +1,6 @@
+
+Please go to the new repository https://github.com/shariltumin/esp32-cam-micropython-2022
+
 # esp32-cam-micropython
 
 **Latest** custommade.zip, please read [this blog](https://kopimojo.blogspot.com/2019/12/custom-made-sometimes-it-is-nice-to-be.html) and find out what it is good for.
