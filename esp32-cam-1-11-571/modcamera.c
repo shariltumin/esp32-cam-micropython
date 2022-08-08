@@ -291,6 +291,47 @@ STATIC mp_obj_t camera_agcgain(mp_obj_t what){
     return mp_const_none;
 }
 STATIC MP_DEFINE_CONST_FUN_OBJ_1(camera_agcgain_obj, camera_agcgain);
+STATIC mp_obj_t camera_info(){
+    sensor_t * s = esp_camera_sensor_get();
+    if (!s) {
+        ESP_LOGE(TAG, "Info Failed. Run init.");
+        return mp_const_false;
+      }
+
+    int py_pixformat;
+
+    switch(s->pixformat) {
+        case PIXFORMAT_JPEG:
+            py_pixformat=0;
+            break;
+        case PIXFORMAT_GRAYSCALE:
+            py_pixformat=1;
+            break;
+        case PIXFORMAT_RGB565:
+            py_pixformat=2;
+            break;
+        default:
+            ESP_LOGE(TAG, "Invalid pixformat returned from sensor.");
+            py_pixformat=99;
+            break;
+    }
+
+    ESP_LOGI(TAG, "aelevels:     %3u", s->status.ae_level);
+    ESP_LOGI(TAG, "aecvalue:     %3u", s->status.aec);
+    ESP_LOGI(TAG, "agc:          %3u", s->status.agc);
+    ESP_LOGI(TAG, "brightness:   %3u", s->status.brightness);
+    ESP_LOGI(TAG, "contrast:     %3u", s->status.contrast);
+    ESP_LOGI(TAG, "framesize:    %3u", s->status.framesize);
+    ESP_LOGI(TAG, "pixformat:    %3u", py_pixformat);
+    ESP_LOGI(TAG, "quality:      %3u", s->status.quality);
+    ESP_LOGI(TAG, "saturation:   %3u", s->status.saturation);
+    ESP_LOGI(TAG, "speffect:     %3u", s->status.special_effect);
+    ESP_LOGI(TAG, "flip:         %3u", s->status.vflip);
+    ESP_LOGI(TAG, "whitebalance: %3u", s->status.wb_mode);
+
+    return mp_const_none;
+}
+STATIC MP_DEFINE_CONST_FUN_OBJ_0(camera_info_obj, camera_info);
 
 STATIC const mp_rom_map_elem_t camera_module_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_camera) },
@@ -309,6 +350,7 @@ STATIC const mp_rom_map_elem_t camera_module_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR_aelevels), MP_ROM_PTR(&camera_aelevels_obj) },
     { MP_ROM_QSTR(MP_QSTR_aecvalue), MP_ROM_PTR(&camera_aecvalue_obj) },
     { MP_ROM_QSTR(MP_QSTR_agcgain), MP_ROM_PTR(&camera_agcgain_obj) },
+    { MP_ROM_QSTR(MP_QSTR_info), MP_ROM_PTR(&camera_info_obj) },
 };
 
 STATIC MP_DEFINE_CONST_DICT(camera_module_globals, camera_module_globals_table);
